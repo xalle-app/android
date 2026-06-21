@@ -88,8 +88,12 @@ export function usePushToken(authToken, navigationRef) {
         // Храним подписку в ref чтобы cleanup мог её отменить
         subRef.current = N.addNotificationResponseReceivedListener((response) => {
           try {
-            const screen = response.notification?.request?.content?.data?.screen;
-            navigationRef?.current?.navigate?.(screen || "Notifications");
+            const data = response.notification?.request?.content?.data || {};
+            if (data.type === "dm" || data.type === "group") {
+              navigationRef?.current?.navigate?.("Main", { screen: "Messages" });
+            } else {
+              navigationRef?.current?.navigate?.(data.screen || "Notifications");
+            }
           } catch {}
         });
       } catch {}
