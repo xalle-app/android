@@ -38,9 +38,8 @@ yarn-error.*
 
 # generated native folders
 /ios
-/android
 
-# Release signing
+# Release signing — keep keystore out of git
 *.keystore
 *.jks
 

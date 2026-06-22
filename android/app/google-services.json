@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "964162676147",
+    "project_id": "xalle-app",
+    "storage_bucket": "xalle-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964162676147:android:98205332073e155bcd57c6",
+        "android_client_info": {
+          "package_name": "app.xalle.client"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMQO10yMEmSlLnlceYAT-qqUn8yT2vtOk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964162676147:android:7f155974a7893535cd57c6",
+        "android_client_info": {
+          "package_name": "app.xalle.social"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMQO10yMEmSlLnlceYAT-qqUn8yT2vtOk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
